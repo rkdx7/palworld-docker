@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  palworld-server:
+    image: rkdx7/palworld-server:v1
+    ports: 
+      - "8211:8211"
+    volumes:
+      - "/home/palworld/Steam/steamapps/common/PalServer/Pal/Saved:./data/Saved"
+      - "/home/palworld/Steam/steamapps/common/PalServer/Pal/Intermediate:./data/Intermediate"
+  # entrypoint:
