@@ -110,19 +110,3 @@ Shuts down the server with a message to all players when the selected seconds ar
 Shut down the server immediately.
 
 **Information**  : Veuillez utiliser les commandes  `/Shutdown`  et  `/DoExit`  avec prudence.
-
-
-## Unban a player
-
-Unfortunately, there is no command to ban players.
-However, you can manually delete bans.
-
-1. To do this, stop your server. The server status should be **Server is not working**!
-2. you will find the `banlist.txt` on the Savegames FTP in the following directory:
-     `KonfigID/Pal/Saved/SaveGames/`
-     **Note**: You will find the ConfigID or configuration ID of your server on our site under **Gameserver**.
-     If your configuration ID was for example 123456, it would look like: `/123456/Pal/Saved/SaveGames/`.
-3. download the `banlist.txt` file and delete the player you want to ban.
-4. save your changes and upload the file to Savegames FTP.
-     Overwrites the existing file on the FTP.
-5. start your server.
