@@ -5,6 +5,6 @@ services:
     ports: 
       - "8211:8211"
     volumes:
-      - "/home/palworld/Steam/steamapps/common/PalServer/Pal/Saved:./data/Saved"
-      - "/home/palworld/Steam/steamapps/common/PalServer/Pal/Intermediate:./data/Intermediate"
+      - "./data/Saved:/home/palworld/Steam/steamapps/common/PalServer/Pal/Saved"  
+      - "./data/Intermediate:/home/palworld/Steam/steamapps/common/PalServer/Pal/Intermediate"  
   # entrypoint:
