@@ -1,4 +1,19 @@
+Source: https://github.com/rkdx7/palworld-docker  
+
 # Docker-compose
+
+Startup command: 
+```
+apt update \
+&& apt install -y docker.io docker-compose \
+&& wget https://github.com/rkdx7/palworld-docker/blob/main/compose.yml \
+&& useradd palworld --uid 1001 \
+&& mkdir -p data/Saved  data/Intermediate \
+&& chown -R palworld: data
+&& docker-compose up -d
+```
+
+Docker-compose file
 ```
 version: "3.8"  
 services:  
@@ -19,6 +34,8 @@ Possible configuration:
 
 By default :
 `Entrypoint: ./PalServer.sh`
+
+For generate config serveur start server and stop the server and setup your config at `./data/Saved/Config/LinuxServer/PalWorldSettings.ini` 
 
 Option list:
 -   `-players 16`  : Modifiez le nombre maximal de joueurs.
