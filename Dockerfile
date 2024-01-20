@@ -52,4 +52,4 @@ RUN chown -R palworld: /home/palworld
 
 USER 1001
 WORKDIR /home/palworld/Steam/steamapps/common/PalServer
-ENTRYPOINT ["./PalServer.sh"]
+ENTRYPOINT ["./PalServer.sh -players 32 -NoAsyncLoadingThread -UseMultithreadForDS -useperfthreads"]
