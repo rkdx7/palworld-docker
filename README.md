@@ -18,9 +18,10 @@ Docker-compose file
 version: "3.8"  
 services:  
   palworld-server:  
-    image: rkdx7/palworld-server:v1  
+    image: rkdx7/palworld-server:v1
+    network_mode: bridge 
     ports:    
-      - "8211:8211"  
+      - "8211:8211/udp"  
     volumes:  
       - "./data/Saved:/home/palworld/Steam/steamapps/common/PalServer/Pal/Saved"  
       - "./data/Intermediate:/home/palworld/Steam/steamapps/common/PalServer/Pal/Intermediate"  
