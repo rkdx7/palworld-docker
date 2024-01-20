@@ -41,8 +41,7 @@ Option list:
 -   `-NoAsyncLoadingThread` 
 -   `-UseMultithreadForDS`  : Optimise pour les environnements CPU multi-threadés.
 
-For generate config serveur start server and stop the server and setup your config at `./data/Saved/Config/LinuxServer/PalWorldSettings.ini` 
-
+For generate config server start server and stop the server and setup your config at `./data/Saved/Config/LinuxServer/PalWorldSettings.ini` 
 ```
 Difficulty=None - Doesn't seem to matter for dedicated servers.
 DayTimeSpeedRate=1.000000 - Changes how long daytime lasts.
