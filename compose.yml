@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   palworld-server:
-    image: rkdx7/palworld-server:v1
+    image: rkdx7/palworld-server:v2
     network_mode: bridge 
     ports:    
       - "8211:8211/udp" 
